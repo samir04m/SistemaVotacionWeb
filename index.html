@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Sistema de Votaciones</title>
+
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="fonts/material-icons.css">
+
+	<style type="text/css">
+		section {
+			background-image: url("images/background.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			min-height: 100vh;
+		}
+		.oscurecer {
+			background-color: rgba(0,0,0,.5);
+			width: 100%;
+			height: 100vh;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<section>
+		<div class="oscurecer">
+			<div class="hide-on-small-only"><br><br><br></div>
+			<div class="row">
+				<div class="col m1 l7">
+					<center>
+						<div class="white-text hide-on-med-and-down">
+							<h3 class="grey-text text-lighten-1">Bienvenido</h3>
+							<h1>SISTEMA <br>DE <br>VOTACIONES <br>2018</h1>
+						</div>
+					</center>
+				</div>
+				<div class="col s12 m10 l4">
+					<div class="card">
+						<div class="card-content">
+							<div class="center-align"><b>Iniciar Sesión</b></div>
+							<form action="">
+								<div class="input-field">
+									<input type="number" name="id" id="id">
+									<label for="id">Número de Documento</label>
+								</div>
+								<div class="input-field">
+									<input type="password" name="password" id="password" class="validate">
+									<label for="password">Contraseña</label>
+								</div>
+								<div class="center-align">
+									<button class="btn waves-effect waves-purple" onclick="alert('No se encuantra ningun usuario registrado con estas credenciales. Intente de nuevo')">Iniciar Sesión</button>
+								</div>
+								<br>
+								No puedes Iniciar Sesión? <a href="#" onclick="alert('Por el momento no esta disponible el registro')">Olvide mi contraseña</a>
+							</form>
+						</div>
+					</div>
+					<div class="card-panel">
+						Aun no tienes una cuenta? <a href="#">Crear cuenta</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="page-footer black">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 l8">
+					<h5>Sistemas de Votaciones 2018</h5>
+				</div>
+				<div class="col s12 m6 l4">
+					<h5>Developers</h5>
+            		<a class="grey-text" href="http://github.com/samir04m">Samir Mejia</a>
+            		<i class="tiny material-icons">github</i>
+            		<br><a class="grey-text" href="#">Ivan Bettin</a>
+            		<br><a class="grey-text" href="#">Hernan Navarro</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Universida del Magdalena © 2018 Copyright Text
+				<div class="right">Programacion Web</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/myJavascript.js"></script>
+</body>
+</html>
