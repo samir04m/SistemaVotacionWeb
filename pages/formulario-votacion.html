@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Formulario de Votacion</title>
+
+	<link rel="stylesheet" href="../css/materialize.css">
+	<link rel="stylesheet" href="../fonts/material-icons.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/myStyles.css">
+	<script defer src="../js/fontawesome-all.js"></script>
+</head>
+<body onload="cargarCandidatos();">
+	
+	<div class="container">
+		<div class="row">
+			<center><h4>Candidatos Precidenciales 2018</h4></center>
+			<hr>
+		</div>
+		<div class="row" id="divListaCandidatos">
+		</div>
+		<div class="row">
+			<div class="right">
+				<!-- onclick="return confirm('¿Estas seguro de querer eliminar esta Categoria?')" -->
+				<button class="btn waves-effect waves-light btn-large red" onclick="cancelar()">CANCELAR</button>
+				<button class="btn waves-effect waves-blue btn-large teal lighten-1" onclick="votar()">COMFIRMAR VOTO</button>
+			</div>
+		</div>
+	
+	</div>
+	<br><br>
+	<footer class="page-footer black">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 l6">
+					<h5>Sistemas de Votaciones 2018</h5>
+					<p style="font-weight: 200;"><big>Mediante esta pagina podras ejercer tu derecho al voto en estas elecciones de 2018</big></p>
+				</div>
+				<div class="col hide-on-small-only l2"></div>
+				<div class="col s12 m6 l4" style="line-height: 2;">
+					<h5>Developers</h5>
+            		<a class="grey-text text-lighten-2" href="http://github.com/samir04m"><i class="fab fa-github fa-2x"></i> Samir Mejia</a>
+            		<br>
+            		<a class="grey-text text-lighten-2" href="https://www.facebook.com/ibanb04"><i class="fab fa-facebook fa-2x"></i> Ivan Bettin</a>
+            		<br>
+            		<a class="grey-text text-lighten-2" href="https://www.facebook.com/hhernannavarro"><i class="fab fa-facebook fa-2x"></i> Hernan Navarro</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Universida del Magdalena © 2018 Copyright Text
+				<div class="right">Programacion Web</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/materialize.js"></script>
+	<script type="text/javascript" src="../js/myJavascript.js"></script>
+
+</body>
+</html>
